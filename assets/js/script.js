@@ -1,5 +1,15 @@
 "use strict";
 
+const titleChange = () => {
+	let docTitle = document.title;
+	window.addEventListener("blur", () => {
+		document.title = "Come back 🥺";
+	});
+	window.addEventListener("focus", () => {
+		document.title = docTitle;
+	});
+};
+
 const elementToggleFunc = function (elem) {
 	elem.classList.toggle("active");
 };
@@ -42,3 +52,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
 		}
 	});
 }
+
+titleChange();
