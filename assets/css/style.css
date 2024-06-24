@@ -519,6 +519,51 @@ main {
   margin-bottom: 30px;
 }
 
+.dwn-resume a {
+  width: 27%;
+}
+
+.resume-btn {
+  position: relative;
+  width: 100%;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  margin-bottom: 30px;
+}
+
+.resume-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.resume-btn ion-icon {
+  font-size: 20px;
+}
+
+.resume-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.resume-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
 .timeline {
   margin-bottom: 30px;
 }
@@ -850,6 +895,10 @@ textarea.form-input::-webkit-resizer {
   .links-btn {
     gap: 5vw;
   }
+
+  .dwn-resume a {
+    width: 49vw;
+  }
 }
 
 /* !for 450px screen */
@@ -882,6 +931,10 @@ textarea.form-input::-webkit-resizer {
 
   .links-btn {
     gap: 5vw;
+  }
+
+  .dwn-resume a {
+    width: 45vw;
   }
 
 }
@@ -1066,6 +1119,10 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
+  .dwn-resume a {
+    width: 37vw;
+  }
+
 }
 
 /*! for larger than 768px screen */
@@ -1106,6 +1163,10 @@ textarea.form-input::-webkit-resizer {
   .form-btn {
     width: max-content;
     margin-left: auto;
+  }
+
+  .dwn-resume a {
+    width: 28vw;
   }
 
 }
@@ -1164,6 +1225,10 @@ textarea.form-input::-webkit-resizer {
 
   .project-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dwn-resume a {
+    width: 21vw;
   }
 }
 
@@ -1281,5 +1346,9 @@ textarea.form-input::-webkit-resizer {
 
   .timeline-text {
     max-width: 700px;
+  }
+
+  .dwn-resume a {
+    width: 17vw;
   }
 }
